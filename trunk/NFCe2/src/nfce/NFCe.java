@@ -142,12 +142,12 @@ public class NFCe {
             nfe2.ide.setIndPres("1");
             
             
-            //Emitente
-            nfe2.emit.setCNPJ("01611275000124");
-            nfe2.emit.setXNome("PAPION INFORMATICA");
-            nfe2.emit.setXFant("PAPION");
-            nfe2.emit.getEnderEmit().setXLgr("DR JOAO BULCAO");
-            nfe2.emit.getEnderEmit().setNro("229");
+            //Emitente - CONFIGURE CONFORME OS DADOS DO EMITENTE (O CNPJ DEVE ESTAR DE ACORDO COM O CERTIFICADO)
+            nfe2.emit.setCNPJ("00000000000000");
+            nfe2.emit.setXNome("EMPRESA TESTE LTDA");
+            nfe2.emit.setXFant("EMPRESA ");
+            nfe2.emit.getEnderEmit().setXLgr("ENDERECO DE TESTE");
+            nfe2.emit.getEnderEmit().setNro("123");
             nfe2.emit.getEnderEmit().setXCpl("COMPLEMENTO");
             nfe2.emit.getEnderEmit().setXBairro("CENTRO");
             nfe2.emit.getEnderEmit().setCMun("4311502");
@@ -156,14 +156,14 @@ public class NFCe {
             nfe2.emit.getEnderEmit().setCEP("96570000");
             nfe2.emit.getEnderEmit().setCPais("1058");
             nfe2.emit.getEnderEmit().setXPais("BRASIL");
-            nfe2.emit.getEnderEmit().setFone("5532821450");
-            nfe2.emit.setIE("0730019624");
-            nfe2.emit.setIM("2648800");
-            nfe2.emit.setCNAE("6201500");
+            nfe2.emit.getEnderEmit().setFone("9999999999");
+            nfe2.emit.setIE("0000000000");
+            nfe2.emit.setIM("0000000");
+            nfe2.emit.setCNAE("0000000");
             nfe2.emit.setCRT("3");
 
             //Destinatario
-            nfe2.dest.setCNPJ("11856486000180");
+            nfe2.dest.setCNPJ("00000000000000");
             nfe2.dest.setXNome("NF-E EMITIDA EM AMBIENTE DE HOMOLOGACAO - SEM VALOR FISCAL");
             nfe2.dest.getEnderDest().setXLgr("RUA DE TESTE");
             nfe2.dest.getEnderDest().setNro("123");
@@ -174,7 +174,7 @@ public class NFCe {
             nfe2.dest.getEnderDest().setCEP("96570000");
             nfe2.dest.getEnderDest().setXPais("BRASIL");
             nfe2.dest.getEnderDest().setCPais("1058");
-            nfe2.dest.getEnderDest().setFone("5591131399");
+            nfe2.dest.getEnderDest().setFone("9999999999");
             //nfe2.dest.setIE("0730024423"); NFCe nao pede IE
             
             /* Indicador De Inscrição Estadual Destinatário

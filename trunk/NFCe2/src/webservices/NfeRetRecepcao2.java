@@ -58,7 +58,7 @@ import webservices.Retornos.RetornoRetRecepcao;
         <infProt Id="ID143130006707136">
             <tpAmb>2</tpAmb>
             <verAplic>RS20131129092745</verAplic>
-            <chNFe>43131201611275000124550010000009871000009872</chNFe>
+            <chNFe>43131201600275000124550010000009871000009872</chNFe>
             <dhRecbto>2013-12-02T11:28:47</dhRecbto>
             <nProt>143130006707136</nProt>
             <digVal>zmnP6uGRnUxjJl+WsA7e5z4PMO8=</digVal>

@@ -134,7 +134,7 @@ public class NfeInutilizacao2 extends WebServices {
         /*
          * O campo ID deve ter 43 caracteres, como segue:
          * 
-         * ID 43 13 01611275000124 55 001 000000001 000000002
+         * ID 43 13 01600275000124 55 001 000000001 000000002
          * 
          * Onde:
          * 

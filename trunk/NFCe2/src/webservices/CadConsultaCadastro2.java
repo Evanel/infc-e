@@ -79,14 +79,14 @@ import webservices.Retornos.RetornoCadConsultaCadastro;
                         <cSit>1</cSit>
                         <indCredNFe>2</indCredNFe>
                         <indCredCTe>4</indCredCTe>
-                        <xNome>PAPION INFORMATICA LTDA</xNome>
+                        <xNome>EMPRESA DE TESTE LTDA</xNome>
                         <xRegApur>SIMPLES NACIONAL</xRegApur>
-                        <CNAE>6209100</CNAE>
-                        <dIniAtiv>1997-01-27</dIniAtiv>
+                        <CNAE>6209111</CNAE>
+                        <dIniAtiv>1997-01-01</dIniAtiv>
                         <dUltSit>1997-01-30</dUltSit>
                         <ender>
-                            <xLgr>RUA DR JOAO LUCHSINGER BULCAO</xLgr>
-                            <nro>229</nro>
+                            <xLgr>ENDERECO</xLgr>
+                            <nro>123</nro>
                             <xBairro>CENTRO</xBairro>
                             <cMun>4311502</cMun>
                             <xMun>Lavras do Sul</xMun>

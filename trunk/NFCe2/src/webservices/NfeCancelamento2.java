@@ -69,7 +69,7 @@ import webservices.Retornos.RetornoCancelamento;
             <cOrgao>43</cOrgao>
             <cStat>297</cStat>
             <xMotivo>Rejeicao: Assinatura difere do calculado</xMotivo>
-            <chNFe>43131201611275000124550010000009901000009908</chNFe>
+            <chNFe>43131201600275000124550010000009901000009908</chNFe>
             <tpEvento>110111</tpEvento>
             <nSeqEvento>1</nSeqEvento>
             <dhRegEvento>2013-12-03T17:51:20-02:00</dhRegEvento>

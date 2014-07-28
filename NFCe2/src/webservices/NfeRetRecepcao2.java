@@ -50,7 +50,7 @@ import webservices.Retornos.RetornoRetRecepcao;
  * <retConsReciNFe versao="2.00" xmlns="http://www.portalfiscal.inf.br/nfe">
     <tpAmb>2</tpAmb>
     <verAplic>RS20131129092745</verAplic>
-    <nRec>431000023700471</nRec>
+    <nRec>000000000000000</nRec>
     <cStat>104</cStat>
     <xMotivo>Lote processado</xMotivo>
     <cUF>43</cUF>
@@ -58,9 +58,9 @@ import webservices.Retornos.RetornoRetRecepcao;
         <infProt Id="ID143130006707136">
             <tpAmb>2</tpAmb>
             <verAplic>RS20131129092745</verAplic>
-            <chNFe>43131201600275000124550010000009871000009872</chNFe>
+            <chNFe>00000000000000000000000000000000000000000000</chNFe>
             <dhRecbto>2013-12-02T11:28:47</dhRecbto>
-            <nProt>143130006707136</nProt>
+            <nProt>000000000000000</nProt>
             <digVal>zmnP6uGRnUxjJl+WsA7e5z4PMO8=</digVal>
             <cStat>100</cStat>
             <xMotivo>Autorizado o uso da NF-e</xMotivo>

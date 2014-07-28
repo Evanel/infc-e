@@ -54,14 +54,14 @@ import webservices.inf.infProt;
     <cStat>100</cStat>
     <xMotivo>Autorizado o uso da NF-e</xMotivo>
     <cUF>43</cUF>
-    <chNFe>43131201600275000124550010000009881000009123</chNFe>
+    <chNFe>00000000000000000000000000000000000000000000</chNFe>
     <protNFe versao="2.00">
         <infProt Id="ID143130006708093">
             <tpAmb>2</tpAmb>
             <verAplic>RS20131129092745</verAplic>
-            <chNFe>43131201600275000124550010000009881000009123</chNFe>
+            <chNFe>00000000000000000000000000000000000000000000</chNFe>
             <dhRecbto>2013-12-02T15:18:03</dhRecbto>
-            <nProt>143130006708093</nProt>
+            <nProt>000000000000000</nProt>
             <digVal>Rgci3VDneckA3js7dVtzqI4zEyo=</digVal>
             <cStat>100</cStat>
             <xMotivo>Autorizado o uso da NF-e</xMotivo>

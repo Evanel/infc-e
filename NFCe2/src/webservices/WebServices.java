@@ -36,7 +36,6 @@ import java.security.Security;
 import javax.xml.soap.*;
 import nfe.util.Log;
 
-
 /**
  *
  * @author Ivan Vargas

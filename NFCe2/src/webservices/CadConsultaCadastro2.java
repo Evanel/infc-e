@@ -69,19 +69,19 @@ import webservices.Retornos.RetornoCadConsultaCadastro;
                     <cStat>111</cStat>
                     <xMotivo>Consulta cadastro com uma ocorrencia</xMotivo>
                     <UF>RS</UF>
-                    <CNPJ>1611275000124</CNPJ>
+                    <CNPJ>00000000000000</CNPJ>
                     <dhCons>2013-12-04T14:55:17</dhCons>
                     <cUF>43</cUF>
                     <infCad>
-                        <IE>730019624</IE>
-                        <CNPJ>1611275000124</CNPJ>
+                        <IE>0000000000</IE>
+                        <CNPJ>00000000000000</CNPJ>
                         <UF>RS</UF>
                         <cSit>1</cSit>
                         <indCredNFe>2</indCredNFe>
                         <indCredCTe>4</indCredCTe>
                         <xNome>EMPRESA DE TESTE LTDA</xNome>
                         <xRegApur>SIMPLES NACIONAL</xRegApur>
-                        <CNAE>6209111</CNAE>
+                        <CNAE>0000000</CNAE>
                         <dIniAtiv>1997-01-01</dIniAtiv>
                         <dUltSit>1997-01-30</dUltSit>
                         <ender>
@@ -186,7 +186,6 @@ public class CadConsultaCadastro2 extends WebServices {
             String fileRetorno = c.getConfiguracoes().getPATH_NFE() + prefix + "-cad.xml"; //tmbm inventado
 
             /* gera xml */
-
             JAXBContext context = JAXBContext.newInstance(TConsCad.class);
             Marshaller m = context.createMarshaller();
             JAXBElement<TConsCad> element = new ObjectFactory().createConsCad(consCad);

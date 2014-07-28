@@ -52,10 +52,10 @@ public class Teste {
         sb.append("Com a classe iQrCode basta chamar os metodos encode()\n");
         sb.append(" e decode() para gerar e ler Qrcode, respectivamente;)\n\n");
         sb.append("Ivan S. Vargas\nivan@is5.com.br\n\n");
+		sb.append("Projeto iNFC-e: https://code.google.com/p/infc-e/\n\n");
         sb.append("Site: www.is5.com.br\n");
         sb.append("Twitter: @isvargas\n");
         sb.append("Skype: ivan_is5\n");
-        //sb.append("e-mail: devbrasil.net/profiles/IvanVargas");
        
         try
         {

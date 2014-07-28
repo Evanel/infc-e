@@ -61,6 +61,8 @@ public class Apresentacao {
         
         sb.append("Ivan S. Vargas\n");
         sb.append("ivan@is5.com.br\n\n");
+		
+		sb.append("Projeto iNFC-e: https://code.google.com/p/infc-e/\n\n");
         
         sb.append("Site: www.is5.com.br\n");
         sb.append("Sype: ivan_i5\n");

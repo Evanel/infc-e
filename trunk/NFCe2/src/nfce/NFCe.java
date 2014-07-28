@@ -32,6 +32,7 @@ import Frames.frmPrincipal;
 import br.inf.portalfiscal.nfe.TNFe.InfNFe.Pag;
 import br.inf.portalfiscal.nfe.TUf;
 import br.inf.portalfiscal.nfe.TUfEmi;
+import iNFe.Configuracao;
 import iNFe.Emissor;
 import iNFe.Item;
 import iNFe.NFe2;
@@ -57,6 +58,7 @@ public class NFCe {
     
     public static void Enviar() {
         String nNota = JOptionPane.showInputDialog("Numero Nota");
+        Configuracao c = Configuracao.getInstance();
         
         if (nNota.length() > 8)
         {
@@ -89,7 +91,7 @@ public class NFCe {
             //nfe2.ide.setHSaiEnt("17:17:17");
             
             nfe2.ide.setTpNF("1");
-            nfe2.ide.setCMunFG("4311502");
+            nfe2.ide.setCMunFG(c.getConfiguracoes().getCOD_CIDADE()); 
             
             /* Tipo de Impressao do DANFE (usar 4 ou 5)
                 0-Sem geração de DANFE; 
@@ -107,8 +109,8 @@ public class NFCe {
                 
             nfe2.ide.setTpImp("4");
             
-            nfe2.ide.setTpEmis("1");
-            nfe2.ide.setTpAmb("2");
+            nfe2.ide.setTpEmis(c.getConfiguracoes().getFORMA_EMISSAO());
+            nfe2.ide.setTpAmb(c.getConfiguracoes().getAMBIENTE());
             nfe2.ide.setFinNFe("1");
             nfe2.ide.setProcEmi("0");
             nfe2.ide.setVerProc("2.2.20");
@@ -142,28 +144,28 @@ public class NFCe {
             nfe2.ide.setIndPres("1");
             
             
-            //Emitente - CONFIGURE CONFORME OS DADOS DO EMITENTE (O CNPJ DEVE ESTAR DE ACORDO COM O CERTIFICADO)
-            nfe2.emit.setCNPJ("00000000000000");
-            nfe2.emit.setXNome("EMPRESA TESTE LTDA");
-            nfe2.emit.setXFant("EMPRESA ");
-            nfe2.emit.getEnderEmit().setXLgr("ENDERECO DE TESTE");
-            nfe2.emit.getEnderEmit().setNro("123");
-            nfe2.emit.getEnderEmit().setXCpl("COMPLEMENTO");
-            nfe2.emit.getEnderEmit().setXBairro("CENTRO");
-            nfe2.emit.getEnderEmit().setCMun("4311502");
-            nfe2.emit.getEnderEmit().setXMun("LAVRAS DO SUL");
-            nfe2.emit.getEnderEmit().setUF(TUfEmi.RS);
-            nfe2.emit.getEnderEmit().setCEP("96570000");
+            //Emitente
+            nfe2.emit.setCNPJ(c.getConfiguracoes().getCNPJ());
+            nfe2.emit.setXNome(c.getConfiguracoes().getRAZAO_SOCIAL());
+            nfe2.emit.setXFant(c.getConfiguracoes().getFANTASIA());
+            nfe2.emit.getEnderEmit().setXLgr(c.getConfiguracoes().getLOGRADOURO());
+            nfe2.emit.getEnderEmit().setNro(c.getConfiguracoes().getNUMERO());
+            nfe2.emit.getEnderEmit().setXCpl(c.getConfiguracoes().getCOMPLEMENTO());
+            nfe2.emit.getEnderEmit().setXBairro(c.getConfiguracoes().getBAIRRO());
+            nfe2.emit.getEnderEmit().setCMun(c.getConfiguracoes().getCOD_CIDADE());
+            nfe2.emit.getEnderEmit().setXMun(c.getConfiguracoes().getCIDADE());
+            nfe2.emit.getEnderEmit().setUF(TUfEmi.RS); //aki to setando RS diretamente... (teste)
+            nfe2.emit.getEnderEmit().setCEP(c.getConfiguracoes().getCEP());
             nfe2.emit.getEnderEmit().setCPais("1058");
             nfe2.emit.getEnderEmit().setXPais("BRASIL");
-            nfe2.emit.getEnderEmit().setFone("9999999999");
-            nfe2.emit.setIE("0000000000");
-            nfe2.emit.setIM("0000000");
-            nfe2.emit.setCNAE("0000000");
-            nfe2.emit.setCRT("3");
+            nfe2.emit.getEnderEmit().setFone(c.getConfiguracoes().getFONE());
+            nfe2.emit.setIE(c.getConfiguracoes().getIE());
+            nfe2.emit.setIM(c.getConfiguracoes().getIM());
+            nfe2.emit.setCNAE(c.getConfiguracoes().getCRT());
+            nfe2.emit.setCRT(c.getConfiguracoes().getCRT());
 
             //Destinatario
-            nfe2.dest.setCNPJ("00000000000000");
+            nfe2.dest.setCNPJ("11856486000180");
             nfe2.dest.setXNome("NF-E EMITIDA EM AMBIENTE DE HOMOLOGACAO - SEM VALOR FISCAL");
             nfe2.dest.getEnderDest().setXLgr("RUA DE TESTE");
             nfe2.dest.getEnderDest().setNro("123");
@@ -174,7 +176,7 @@ public class NFCe {
             nfe2.dest.getEnderDest().setCEP("96570000");
             nfe2.dest.getEnderDest().setXPais("BRASIL");
             nfe2.dest.getEnderDest().setCPais("1058");
-            nfe2.dest.getEnderDest().setFone("9999999999");
+            nfe2.dest.getEnderDest().setFone("5591131399");
             //nfe2.dest.setIE("0730024423"); NFCe nao pede IE
             
             /* Indicador De Inscrição Estadual Destinatário

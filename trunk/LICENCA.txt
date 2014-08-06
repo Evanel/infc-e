@@ -1,4 +1,4 @@
-Licença Pública Geral Menor do GNU 
+Licença Pública Geral Menor do GNU
 Versão 2.1, Fevereiro de 1999 
 
 Copyright © 1991, 1999 Free Software Foundation, Inc.

@@ -42,8 +42,15 @@ import nfe.util.Util;
 /**
  *
  * @author Ivan Vargas
+ *   
+ *  Este eh um exemplo basico de como enviar uma NFC-e utilizando o projeto iNFC-e.
+ *  Ao rodar este exemplo o sistema pede algumas informacoes (utilizando JOptionPane,
+ *  pq realizei este teste em desktop, porem vc pode passas os parametros da forma
+ *  que desejar), a seguir ele monta a NFC-e (classe NFe2) e procede com o envio
+ *  da mesma, mostrando, por fim, o resultado do processamento.
+ *  
  */
-public class NFCe {
+public class DemoNFCe {
 
     /**
      * @param args the command line arguments

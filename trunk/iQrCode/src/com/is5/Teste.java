@@ -1,4 +1,4 @@
-/*******************************************************************************
+﻿/*******************************************************************************
 * Projeto iNFC-e                                                               *
 * Emissao de NFC-e em Java                                                     *
 *                                                                              *
@@ -41,25 +41,25 @@ public class Teste {
      */
     public static void main(String[] args) 
 	{
-		/* instancia classe */
+	/* instancia classe */
         iQrCode qr = new iQrCode();
         
-		/* configura parametros */
+	/* configura parametros */
         qr.setSize(125);
         qr.setMensagem("ISSO EH UMA MENSAGEM DE TESTE");
         qr.setPathImagem("C:/QRTESTE.JPG");
         
-		/* codifica em qrCode */
+	/* codifica em qrCode */
         if ( qr.encode() )
             System.out.println("QR GERADO COM SUCESSO!");
         else
-		    /* retorna mensagens de erro */
+	    /* retorna mensagens de erro */
             System.out.println(qr.getRetorno()); 
 
-		/* decodifica o qrCode */
+	/* decodifica o qrCode */
         String r = qr.decode();
         
-		/* imprime a mensagem */
+	/* imprime a mensagem */
         System.out.println("Mensagem: " + r);        
     }
 }

@@ -39,49 +39,27 @@ public class Teste {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
-        // TODO code application logic here
-        
-        StringBuilder sb = new StringBuilder();
-        
-        sb.append("iQrCode - Gerador/leitor de QrCode\n\n");
-        sb.append("Este .jar se utiliza de classes do projeto QrCode e ZXing.\n");
-        sb.append("Como a utilização destas classes é um pouco complexa\n");
-        sb.append("resolvi empacotar tudo em um .jar juntamente com uma\n");
-        sb.append("classe para facilitar a utilizacao das mesmas.\n\n");
-        sb.append("Com a classe iQrCode basta chamar os metodos encode()\n");
-        sb.append(" e decode() para gerar e ler Qrcode, respectivamente;)\n\n");
-        sb.append("Ivan S. Vargas\nivan@is5.com.br\n\n");
-		sb.append("Projeto iNFC-e: https://code.google.com/p/infc-e/\n\n");
-        sb.append("Site: www.is5.com.br\n");
-        sb.append("Twitter: @isvargas\n");
-        sb.append("Skype: ivan_is5\n");
-       
-        try
-        {
-            JOptionPane.showMessageDialog(null, sb.toString());
-        }catch(Exception ex) {
-            System.out.println(sb.toString());
-        }
-               
-        /*
-        
+    public static void main(String[] args) 
+	{
+		/* instancia classe */
         iQrCode qr = new iQrCode();
         
+		/* configura parametros */
         qr.setSize(125);
         qr.setMensagem("ISSO EH UMA MENSAGEM DE TESTE");
         qr.setPathImagem("C:/QRTESTE.JPG");
         
+		/* codifica em qrCode */
         if ( qr.encode() )
             System.out.println("QR GERADO COM SUCESSO!");
         else
-            System.out.println(qr.getRetorno());
+		    /* retorna mensagens de erro */
+            System.out.println(qr.getRetorno()); 
 
+		/* decodifica o qrCode */
         String r = qr.decode();
         
-        System.out.println("Mensagem: " + r);
-        * 
-        */
-        
+		/* imprime a mensagem */
+        System.out.println("Mensagem: " + r);        
     }
 }

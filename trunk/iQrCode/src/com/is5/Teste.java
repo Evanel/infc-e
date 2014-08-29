@@ -40,7 +40,7 @@ public class Teste {
      * @param args the command line arguments
      */
     public static void main(String[] args) 
-	{
+    {
 	/* instancia classe */
         iQrCode qr = new iQrCode();
         

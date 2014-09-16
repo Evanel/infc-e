@@ -11,5 +11,5 @@ Isso deve acessar o servidor e baixar os fontes para essa pasta.<br>Para receber
 <br><br>
 Basicamente é isso ;)
 <br><br>
-Ivan S. Vargas
+Ivan S. Vargas<br>
 ivan@is5.com.br

@@ -7,7 +7,7 @@ Como realizar o download do código fonte:
 5. Na tela que abrir, em URL of repository, digite a seguinte URL: http://infc-e.googlecode.com/svn/trunk/<br>
 6. Clique em OK<br>
 <br>
-Isso deve acessar o servidor e baixar os fontes para essa pasta. Para receber atualizações, basta clicar na pasta, ir no menu do Tortoise e clicar em Update.
+Isso deve acessar o servidor e baixar os fontes para essa pasta.<br>Para receber atualizações, basta clicar na pasta, ir no menu do Tortoise e clicar em Update.
 <br><br>
 Basicamente é isso ;)
 <br><br>
